@@ -118,6 +118,22 @@ http://p2.mangoproxy.com:2333:user:password
 
 ---
 
+## 🛠️ Troubleshooting
+
+### `ImportError: DLL load failed while importing _greenlet`
+
+This error occurs because `greenlet` requires **Microsoft Visual C++ Redistributable**.
+
+**Fix:**
+
+1. Download and install [Microsoft Visual C++ Redistributable x64](https://aka.ms/vs/17/release/vc_redist.x64.exe)
+2. Restart your computer
+3. Run `install.bat` again
+
+> ⚠️ This error also appears if you use Python 3.12 or 3.13+. Make sure you are using **Python 3.11** only.
+
+---
+
 ## ⚠️ Disclaimer
 
 This tool is intended for educational and research purposes only. Use responsibly and in accordance with the terms of service of websites you visit.
